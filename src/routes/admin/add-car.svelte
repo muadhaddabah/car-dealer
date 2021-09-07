@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { identity } from "svelte/internal";
 
     $: decoded = false;
     $: hasResults = false;
@@ -12,8 +13,15 @@
         data.model = "s550";
     };
 
-    const handleSave = () => {
+    const handleSave = async () => {
         console.log(vehicle);
+        await fetch("add-car.json", {
+            method: "post",
+            body: JSON.stringify(vehicle),
+            headers: {
+                "content-type": "application/json",
+            },
+        });
     };
 
     const chunkArray = (arr, chunkSize) => {
@@ -45,9 +53,9 @@
     let features = [];
 
     const getFeatures = async () => {
-        const res = await fetch("/api/features");
-        const json = await res.json();
-        features = json.data;
+        const res = await fetch("http://localhost:3999/features");
+        features = await res.json();
+        // features = json.data;
     };
 
     const searchVIN = async () => {
@@ -291,12 +299,12 @@
     >
         Features
         <div class="row row-cols-3">
-            {#each features as feature (feature.split(" ").join("_"))}
+            {#each features as { id, feature } (`${id}_${feature}`)}
                 <div class="col">
                     <input
                         bind:group={vehicle.Features}
                         type="checkbox"
-                        value={feature}
+                        value={{ id, feature }}
                     />
                     {feature}
                 </div>
