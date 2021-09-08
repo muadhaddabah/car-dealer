@@ -108,7 +108,10 @@
         let reader = new FileReader();
         reader.readAsDataURL(image);
         reader.onload = (e) => {
-            vehicle.Photos = [...vehicle.Photos, e.target.result];
+            vehicle.Photos = [
+                ...vehicle.Photos,
+                e.target.result.replace(/^data:(.*,)?/, ""),
+            ];
         };
     };
 
