@@ -211,7 +211,7 @@
                         </h6>
                     </div>
                 </div>
-
+                <!-- price  miles colors -->
                 <div class="row row-cols-2 g-3">
                     <!-- miles -->
                     <div class="col">

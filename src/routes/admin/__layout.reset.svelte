@@ -25,11 +25,13 @@
                     <a class="nav-link" href="#">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" href="/admin/testimonial"
+                        >Testimonials</a
+                    >
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Staff</a>
+                    <a class="nav-link" href="/admin/staff">Staff</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Settings</a>
