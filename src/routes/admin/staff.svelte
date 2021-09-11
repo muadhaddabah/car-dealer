@@ -164,10 +164,10 @@
     </div>
 </div>
 
-<div class="row  mt-5">
+<div class="row mt-5">
     {#if staffMembers.length}
         {#each staffMembers as staff}
-            <div class="col">
+            <div class="col my-3">
                 <div class="card" style="width: 18rem;">
                     <!-- <img src="..." class="card-img-top" alt="..." /> -->
                     <div class="card-body">

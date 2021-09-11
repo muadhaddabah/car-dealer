@@ -6,15 +6,15 @@
     let status = 0;
     $: displayStatus = ["Pending", "Approved", "Rejected"][status];
 
-    const filterTestimonials = (key) => {
-        status = key;
-        testimonials = allTestimonials.filter((it) => it.status === key);
-    };
-
     const getTestimonials = async () => {
         const res = await fetch("http://localhost:3999/testimonials");
         allTestimonials = await res.json();
         filterTestimonials(0);
+    };
+
+    const filterTestimonials = (key) => {
+        status = key;
+        testimonials = allTestimonials.filter((it) => it.status === key);
     };
 
     onMount(getTestimonials);
@@ -41,7 +41,7 @@
 <h1 class="text-center my-2">{displayStatus} Testimonials</h1>
 <div class="row row-cols-3 mt-3">
     {#each testimonials as testimonial}
-        <div class="col">
+        <div class="col my-1">
             <div class="card">
                 <!-- <img src="..." class="card-img-top" alt="..." /> -->
                 <h5 class="card-header">{testimonial.name}</h5>
@@ -49,6 +49,32 @@
                     <p class="card-text">
                         "{testimonial.testimonial}"
                     </p>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <input
+                        type="radio"
+                        class="btn-check"
+                        name="options-outlined"
+                        id="success-outlined"
+                        autocomplete="off"
+                        checked
+                    />
+                    <label
+                        class="btn btn-outline-success"
+                        for="success-outlined">Approve</label
+                    >
+
+                    <input
+                        type="radio"
+                        class="btn-check"
+                        name="options-outlined"
+                        id="danger-outlined"
+                        autocomplete="off"
+                    />
+                    <label
+                        class="btn btn-outline-danger mx-2"
+                        for="danger-outlined">Reject</label
+                    >
                 </div>
             </div>
         </div>

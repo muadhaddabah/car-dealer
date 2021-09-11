@@ -2566,5 +2566,92 @@
     }
   ],
   "settings": [],
-  "contacts": []
+  "contacts": [
+    {
+      "id": 1,
+      "ContactTypeId": 1,
+      "Date": "7/13/20",
+      "FirstName": "od",
+      "LastName": "fc",
+      "Phone": "7276143777",
+      "Email": "odfc@yahoo.com",
+      "Comment": "Lorem ipsum dolor sit ame. Ratione rem temporibus earum. Ratione rem temporibus earum Ratione rem temporibus earum",
+      "IsSaved": 0,
+      "IsDeleted": 0
+    },
+    {
+      "id": 2,
+      "ContactTypeId": 1,
+      "Date": "12/25/20",
+      "FirstName": "lk",
+      "LastName": "fc",
+      "Phone": "7276143777",
+      "Email": "odfc@yahoo.com",
+      "Comment": "Lorem ipsum dolor sit ame. Ratione rem temporibus earum. Ratione rem temporibus earum Ratione rem temporibus earum",
+      "IsSaved": 0,
+      "IsDeleted": 0
+    },
+    {
+      "id": 3,
+      "ContactTypeId": 1,
+      "Date": "1/13/21",
+      "FirstName": "hy",
+      "LastName": "fc",
+      "Phone": "7276143777",
+      "Email": "odfc@yahoo.com",
+      "Comment": "Lorem ipsum dolor sit ame. Ratione rem temporibus earum. Ratione rem temporibus earum Ratione rem temporibus earum",
+      "IsSaved": 0,
+      "IsDeleted": 0
+    },
+    {
+      "id": 4,
+      "ContactTypeId": 2,
+      "Date": "11/03/21",
+      "FirstName": "od",
+      "LastName": "Scammer",
+      "Phone": "7276143777",
+      "Email": "odfc@gmail.com",
+      "Year": 2021,
+      "Make": "Mercades-Benze",
+      "Model": "S63",
+      "Mileage": "32,000",
+      "Condition": "Like New",
+      "Comment": "Lorem ipsum dolor sit ame. Ratione rem temporibus earum. Ratione rem temporibus earum Ratione rem temporibus earum",
+      "IsSaved": 0,
+      "IsDeleted": 0
+    },
+    {
+      "id": 6,
+      "ContactTypeId": 2,
+      "Date": "11/03/21",
+      "FirstName": "Mars",
+      "LastName": "Scammer",
+      "Phone": "7276143777",
+      "Email": "odfc@gmail.com",
+      "Year": 2021,
+      "Make": "Mercades-Benze",
+      "Model": "S63",
+      "Mileage": "32,000",
+      "Condition": "Like New",
+      "Comment": "Lorem ipsum dolor sit ame. Ratione rem temporibus earum. Ratione rem temporibus earum Ratione rem temporibus earum",
+      "IsSaved": 0,
+      "IsDeleted": 0
+    }
+  ],
+  "contact-types": [
+    {
+      "id": 1,
+      "typeName": "General Inquiry",
+      "component": "GeneralInquiry",
+      "sKey": "general-inquiry",
+      "isDefault": 1
+    },
+    {
+      "id": 2,
+      "typeName": "Trade-In",
+      "component": "TradeIn",
+      "sKey": "trade-in",
+      "isDefault": 0
+    }
+  ]
 }

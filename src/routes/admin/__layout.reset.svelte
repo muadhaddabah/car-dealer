@@ -22,10 +22,10 @@
                     >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="/admin/contacts">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/testimonial"
+                    <a class="nav-link" href="/admin/testimonials"
                         >Testimonials</a
                     >
                 </li>

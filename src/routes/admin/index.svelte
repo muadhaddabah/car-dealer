@@ -59,11 +59,7 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">2015 Mercades-Benze s550</h5>
-                        <!-- <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer.
-                        </p> -->
+
                         <ul>
                             <li>VIN: 213546</li>
                             <li>Price: 45,000</li>
