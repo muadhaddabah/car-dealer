@@ -1,10 +1,11 @@
 <script>
     export let contacts;
-    export let handleDelete;
+    export let handleDelete = () => {};
+    export let handleSaveForLater = () => {};
 </script>
 
 {#each contacts as contact}
-    <div class="card mb-3" style="max-width: 900px;">
+    <div class="card mb-3" style="max-width: 800px;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img
@@ -61,13 +62,11 @@
                             on:click={() => handleDelete(contact.id)}
                             class="btn btn-danger mx-1">Delete</button
                         >
-                        <!-- <button
-                                        type="button "
-                                        class="btn btn-warning mx-1"
-                                        >Mark as Read</button
-                                    > -->
-                        <button type="button" class="btn btn-success"
-                            >Save for Later</button
+
+                        <button
+                            type="button"
+                            on:click={() => handleSaveForLater(contact.id)}
+                            class="btn btn-success">Mark as Read</button
                         >
                     </div>
                 </div>

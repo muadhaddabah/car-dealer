@@ -1,30 +1,41 @@
 <script>
-    import { groupBy } from "$lib/components/utils";
+    import { contactTypes, contactTypes1 } from "$lib/components/utils";
     import { onMount } from "svelte";
-    import AddCar from "./add-car.svelte";
     import GeneralInquiry from "./components/general-inquiry.svelte";
     import TradeIn from "./components/trade-in.svelte";
 
     let contacts = [];
     let allContacts = [];
-    let contactTypes = [];
-    let RequestType = 0;
-    let components = [];
+    $: inquiries = contacts.filter(
+        (it) => it.ContactTypeId === contactTypes.generalInquiry.id
+    );
 
-    const setUp = async () => {
+    $: tradeIns = contacts.filter(
+        (it) => it.ContactTypeId === contactTypes.tradeIn.id
+    );
+
+    const setUp = async (filterType) => {
         const contactsResponse = await fetch("http://localhost:3999/contacts");
         allContacts = await contactsResponse.json();
-        const contactTypesResponse = await fetch(
-            "http://localhost:3999/contact-types"
-        );
-        contactTypes = await contactTypesResponse.json();
 
-        const defaultTypeIndex = contactTypes.findIndex((it) => it.isDefault);
-
-        filterContactForms(contactTypes[defaultTypeIndex].id);
+        filterContactForms(filterType || contactTypes.generalInquiry.id);
     };
 
-    const handleDelete = async (id) => {
+    const handleSaveForLater = async (id) => {
+        console.log(id);
+        const res = await fetch(`http://localhost:3999/contacts/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify({ IsSaved: 1, IsDeleted: 0 }),
+            headers: {
+                "content-type": "application/json",
+            },
+        });
+        if (res.ok) {
+            await setUp();
+        }
+    };
+
+    const handleDelete = async (id, filterType) => {
         console.log(id);
         const res = await fetch(`http://localhost:3999/contacts/${id}`, {
             method: "PATCH",
@@ -34,17 +45,11 @@
             },
         });
         if (res.ok) {
-            await setUp();
-            const defaultTypeIndex = contactTypes.findIndex(
-                (it) => it.isDefault
-            );
-
-            filterContactForms(contactTypes[defaultTypeIndex].id);
+            await setUp(filterType);
         }
     };
 
     const filterContactForms = (reqType) => {
-        RequestType = reqType;
         contacts = allContacts.filter(
             (it) => it.ContactTypeId === reqType && !it.IsDeleted && !it.IsSaved
         );
@@ -68,8 +73,8 @@
         role="tablist"
         aria-orientation="vertical"
     >
-        <!-- Tabs -->
-        {#each contactTypes as type}
+        <!-- Pill Tabs -->
+        {#each Object.values(contactTypes) as type}
             <button
                 class="nav-link"
                 class:active={type.isDefault}
@@ -93,7 +98,7 @@
             type="button"
             role="tab"
             aria-controls="v-pills-messages"
-            aria-selected="false">Saved For Later</button
+            aria-selected="false">Read</button
         >
         <button
             class="nav-link"
@@ -108,7 +113,7 @@
         >
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-        {#each contactTypes as type}
+        {#each Object.values(contactTypes) as type}
             <div
                 class="tab-pane fade"
                 class:show={type.isDefault}
@@ -119,10 +124,25 @@
             >
                 <div class="row">
                     {#if type.component === "TradeIn"}
-                        <TradeIn {contacts} {handleDelete} />
+                        <TradeIn
+                            contacts={tradeIns}
+                            handleDelete={(id) => {
+                                handleDelete(id, contactTypes.tradeIn.id);
+                            }}
+                            {handleSaveForLater}
+                        />
                     {/if}
                     {#if type.component === "GeneralInquiry"}
-                        <GeneralInquiry {contacts} {handleDelete} />
+                        <GeneralInquiry
+                            contacts={inquiries}
+                            handleDelete={(id) => {
+                                handleDelete(
+                                    id,
+                                    contactTypes.generalInquiry.id
+                                );
+                            }}
+                            {handleSaveForLater}
+                        />
                     {/if}
                 </div>
             </div>
@@ -136,7 +156,8 @@
             role="tabpanel"
             aria-labelledby="v-pills-messages-tab"
         >
-            <TradeIn {contacts} {handleDelete} />
+            <TradeIn contacts={tradeIns} {handleDelete} />
+            <GeneralInquiry contacts={inquiries} {handleDelete} />
         </div>
         <div
             class="tab-pane fade"
@@ -145,7 +166,15 @@
             aria-labelledby="v-pills-settings-tab"
         >
             {#if contacts.length}
-                <TradeIn {contacts} {handleDelete} />
+                <TradeIn
+                    contacts={tradeIns}
+                    handleDelete={(id) => {
+                        handleDelete(id, contactTypes.tradeIn.id);
+                    }}
+                    {handleSaveForLater}
+                />
+
+                <GeneralInquiry contacts={inquiries} {handleSaveForLater} />
             {:else}
                 <h2>No Deleted Items to show orr something</h2>
             {/if}

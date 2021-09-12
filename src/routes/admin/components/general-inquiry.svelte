@@ -1,5 +1,7 @@
 <script>
     export let contacts;
+    export let handleDelete = () => {};
+    export let handleSaveForLater = () => {};
 </script>
 
 {#each contacts as contact}
@@ -33,6 +35,25 @@
                 </li>
                 <!-- <li class="list-group-item ">Actions?:</li> -->
             </ul>
+            <div class="d-flex card-footer justify-content-end">
+                <div
+                    class="btn-group"
+                    role="group"
+                    aria-label="Basic mixed styles example"
+                >
+                    <button
+                        type="button"
+                        on:click={() => handleDelete(contact.id)}
+                        class="btn btn-danger mx-1">Delete</button
+                    >
+
+                    <button
+                        type="button"
+                        on:click={() => handleSaveForLater(contact.id)}
+                        class="btn btn-success">Mark as Read</button
+                    >
+                </div>
+            </div>
         </div>
     </div>
 {/each}
