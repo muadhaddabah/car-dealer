@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import Testimonial from "./components/testimonial.svelte";
 
     let testimonials = [];
     let allTestimonials = [];
@@ -10,6 +11,34 @@
         const res = await fetch("http://localhost:3999/testimonials");
         allTestimonials = await res.json();
         filterTestimonials(0);
+    };
+
+    const approveTestimonial = async (id) => {
+        console.log(id);
+        const res = await fetch(`http://localhost:3999/testimonials/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: 1 }),
+            headers: {
+                "content-type": "application/json",
+            },
+        });
+        if (res.ok) {
+            await getTestimonials();
+        }
+    };
+
+    const rejectTestimonial = async (id) => {
+        console.log(id);
+        const res = await fetch(`http://localhost:3999/testimonials/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: 2 }),
+            headers: {
+                "content-type": "application/json",
+            },
+        });
+        if (res.ok) {
+            await getTestimonials();
+        }
     };
 
     const filterTestimonials = (key) => {
@@ -24,7 +53,8 @@
     <button
         class="btn btn-success "
         class:disabled={status === 1}
-        on:click={() => filterTestimonials(1)}>Approved</button
+        on:click={() => filterTestimonials(1)}
+        ><i class="fas fa-check-double mx-1" />Approved</button
     >
     <button
         class="btn btn-primary mx-3"
@@ -34,7 +64,8 @@
     <button
         class="btn btn-danger"
         class:disabled={status === 2}
-        on:click={() => filterTestimonials(2)}>Rejcted</button
+        on:click={() => filterTestimonials(2)}
+        ><i class="fas fa-trash-alt px-1" />Deleted</button
     >
 </div>
 
@@ -43,7 +74,6 @@
     {#each testimonials as testimonial}
         <div class="col my-1">
             <div class="card">
-                <!-- <img src="..." class="card-img-top" alt="..." /> -->
                 <h5 class="card-header">{testimonial.name}</h5>
                 <div class="card-body">
                     <p class="card-text">
@@ -51,34 +81,25 @@
                     </p>
                 </div>
                 <div class="card-footer d-flex justify-content-end">
-                    <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlined"
-                        id="success-outlined"
-                        autocomplete="off"
-                        checked
-                    />
-                    <label
-                        class="btn btn-outline-success"
-                        for="success-outlined">Approve</label
+                    <button
+                        type="button"
+                        on:click={() => approveTestimonial(testimonial.id)}
+                        class="btn btn-success mx-1"
+                        ><i class="far fa-check-circle mx-1" />Approve</button
                     >
 
-                    <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlined"
-                        id="danger-outlined"
-                        autocomplete="off"
-                    />
-                    <label
-                        class="btn btn-outline-danger mx-2"
-                        for="danger-outlined">Reject</label
+                    <button
+                        type="button"
+                        on:click={() => rejectTestimonial(testimonial.id)}
+                        class="btn btn-danger"
+                        ><i class="fas fa-trash-alt m-1" />Delete</button
                     >
                 </div>
             </div>
         </div>
-        <!-- </div> -->
-        <!-- end -->
+
+        <!-- {#if testimonial.length} -->
+        <!-- <Testimonial {approveTestimonial} {rejectTestimonial} /> -->
+        <!-- {/if} -->
     {/each}
 </div>

@@ -1,5 +1,5 @@
 <script>
-    import { contactTypes, contactTypes1 } from "$lib/components/utils";
+    import { contactTypes } from "$lib/components/utils";
     import { onMount } from "svelte";
     import GeneralInquiry from "./components/general-inquiry.svelte";
     import TradeIn from "./components/trade-in.svelte";
@@ -157,6 +157,7 @@
             aria-labelledby="v-pills-messages-tab"
         >
             <TradeIn contacts={tradeIns} {handleDelete} />
+
             <GeneralInquiry contacts={inquiries} {handleDelete} />
         </div>
         <div

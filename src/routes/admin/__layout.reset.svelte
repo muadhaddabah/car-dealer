@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/admin/staff">Staff</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Settings</a>
+                    <a class="nav-link" href="/admin/settings">Settings</a>
                 </li>
             </ul>
             <div class="d-flex">

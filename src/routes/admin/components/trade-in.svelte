@@ -60,13 +60,13 @@
                         <button
                             type="button"
                             on:click={() => handleDelete(contact.id)}
-                            class="btn btn-danger mx-1">Delete</button
+                            class="btn btn-secondary mx-1">Delete</button
                         >
 
                         <button
                             type="button"
                             on:click={() => handleSaveForLater(contact.id)}
-                            class="btn btn-success">Mark as Read</button
+                            class="btn btn-primary">Mark as Read</button
                         >
                     </div>
                 </div>

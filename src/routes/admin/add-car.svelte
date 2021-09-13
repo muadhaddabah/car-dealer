@@ -362,9 +362,9 @@
             />
         </div>
 
-        <button class="btn btn-primary float-end" on:click={handleSave}
-            >Submit</button
-        >
+        <button class="btn btn-primary float-end" on:click={handleSave}>
+            Submit
+        </button>
     </div>
 </div>
 

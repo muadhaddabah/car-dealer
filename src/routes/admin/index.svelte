@@ -8,10 +8,19 @@
         cars = await res.json();
     };
 
+    const toggleActive = async (e, carId) => {
+        const active = e.target.checked ? 1 : 0;
+        const res = await fetch(`http://localhost:3999/cars/${carId}`, {
+            method: "PATCH",
+            body: JSON.stringify({ IsActive: active }),
+            headers: {
+                "content-type": "application/json",
+            },
+        });
+    };
+
     onMount(getCars);
 </script>
-
-<!-- Admin list of cars -->
 
 <div class="row">
     <div class="position-relative">
@@ -20,44 +29,66 @@
         </div>
     </div>
 </div>
-{#each cars as car}
-    <div class="col">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img
-                        src="https://picsum.photos/200"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                    />
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{car.Make} {car.Model}</h5>
+<div class="row row-cols-2 ">
+    {#each cars as car}
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img
+                            src="https://picsum.photos/200"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{car.Make} {car.Model}</h5>
 
-                        <ul>
-                            <li>VIN: {car.VIN}</li>
-                            <li>Price: {car.Price}</li>
-                            <li>Milage: {car.Miles}</li>
-                        </ul>
-                        <button type="button" class="btn btn-primary"
-                            >Edit</button
-                        >
-                        <button type="button" class="btn btn-primary"
-                            >delete</button
-                        >
-                        <button type="button" class="btn btn-primary"
-                            >delete</button
-                        >
-                        <button type="button" class="btn btn-primary"
-                            >delete</button
-                        >
+                            <ul>
+                                <li>VIN: {car.VIN}</li>
+                                <li>Price: {car.Price}</li>
+                                <li>Milage: {car.Miles}</li>
+                            </ul>
+
+                            <div
+                                class="card-footer row d-flex justify-content-center"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn col-2 btn-danger"
+                                    ><i class="fas fa-trash-alt" /></button
+                                >
+                                <a
+                                    href={`/admin/cars/${car.id}`}
+                                    class="btn border-2 border-info col-2 mx-3"
+                                >
+                                    <i class="fas fa-edit" /></a
+                                >
+
+                                <div class="form-check col-2 form-switch">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        checked={car.IsActive}
+                                        on:change={(e) =>
+                                            toggleActive(e, car.id)}
+                                        id="flexSwitchCheckDefault"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="flexSwitchCheckDefault"
+                                        >Publish</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-{/each}
+    {/each}
+</div>
 <!-- noew -->
 <div class="col">
     <div class="card mb-3" style="max-width: 540px;">
