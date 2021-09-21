@@ -22,6 +22,33 @@
     onMount(getCars);
 </script>
 
+<div class="row ">
+    <div class="col-xl-2 col-md-2">
+        <div class="widget widget-stats bg-blue">
+            <div class="stats-info border-bottom border-2 border-light">
+                <h4 class="text-center">Total Cars</h4>
+            </div>
+            <h2 class="text-center mt-2">57</h2>
+        </div>
+    </div>
+    <div class="col-xl-2 col-md-2">
+        <div class="widget widget-stats bg-warning text-dark">
+            <div class="stats-info border-bottom border-2 border-dark">
+                <h4 class="text-center">Private Cars</h4>
+            </div>
+            <h2 class="text-center mt-2">17</h2>
+        </div>
+    </div>
+    <div class="col-xl-2 col-md-2">
+        <div class="widget widget-stats bg-success text-light">
+            <div class="stats-info border-bottom border-2 border-light">
+                <h4 class="text-center">Public Cars</h4>
+            </div>
+            <h2 class="text-center mt-2">40</h2>
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <div class="position-relative">
         <div class="position-absolute top-0 end-0">
@@ -95,7 +122,7 @@
         <div class="row g-0">
             <div class="col-md-4">
                 <img
-                    src="https://picsum.photos/200"
+                    src="/static/images/cars/1126"
                     class="img-fluid rounded-start"
                     alt="..."
                 />
@@ -103,11 +130,7 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">2015 Mercades-Benze s550</h5>
-                    <!-- <p class="card-text">
-                            This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content
-                            is a little bit longer.
-                        </p> -->
+
                     <ul>
                         <li>VIN: 213546</li>
                         <li>Price: 45,000</li>
@@ -125,3 +148,22 @@
         </div>
     </div>
 </div>
+
+<style>
+    .widget.widget-stats {
+        /* position: relative; */
+        color: #fff;
+        padding: 0.77rem;
+        border-radius: 4px;
+    }
+    .widget {
+        overflow: hidden;
+        margin-bottom: 20px;
+        background: #fff;
+        color: inherit;
+        padding: 0;
+    }
+    .bg-blue {
+        background-color: steelblue !important;
+    }
+</style>

@@ -169,11 +169,16 @@
         {#each staffMembers as staff}
             <div class="col my-3">
                 <div class="card" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..." /> -->
                     <div class="card-body">
                         <h5 class="card-title">
                             {staff.FirstName}
                             {staff.LastName}
+                            <button
+                                class="btn text-danger fas fa-trash float-end"
+                            />
+                            <button
+                                class="btn text-muted fas fa-edit float-end"
+                            />
                         </h5>
 
                         <h6 class="card-subtitle mb-2 text-muted">

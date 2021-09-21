@@ -28,7 +28,7 @@
       "Trim": "Super Crew - Raptor",
       "VIN": "1FTFW1RG2LFB85006",
       "VehicleType": "TRUCK ",
-      "IsActive": 0,
+      "IsActive": 1,
       "additionalData": [
         [
           [
@@ -165,103 +165,150 @@
       ]
     },
     {
-      "Miles": "60k",
-      "Price": "67.5k",
-      "ExteriorColor": "",
+      "Miles": "4k",
+      "Price": "86k",
+      "ExteriorColor": "#6b6b6b",
       "ExteriorColorSecondary": "",
-      "InteriorColor": "",
+      "InteriorColor": "#da0707",
       "Features": [
         {
-          "id": 16,
-          "feature": "service-desk"
-        },
-        {
-          "id": 4,
-          "feature": "Realigned"
-        },
-        {
-          "id": 1,
-          "feature": "algorithm"
+          "id": 22,
+          "feature": "Advanced"
         }
       ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
+      "MakeID": "515",
+      "Make": "LEXUS",
+      "ModelID": "21951",
+      "Model": "RC-F",
       "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 1,
+      "Trim": "Track",
+      "VIN": "JTHYP5BCXL5007594",
+      "VehicleType": "PASSENGER CAR",
       "additionalData": [
         [
+          [
+            "ABS",
+            "Standard"
+          ],
+          [
+            "AdaptiveCruiseControl",
+            "Standard"
+          ],
+          [
+            "AdaptiveDrivingBeam",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "AirBagLocCurtain",
+            "All Rows"
+          ],
           [
             "AirBagLocFront",
             "1st Row (Driver and Passenger)"
           ],
           [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
+            "AirBagLocKnee",
+            "1st Row (Driver and Passenger)"
           ]
         ],
         [
+          [
+            "AirBagLocSide",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AutoReverseSystem",
+            "Standard"
+          ],
+          [
+            "Axles",
+            "2"
+          ]
+        ],
+        [
+          [
+            "BasePrice",
+            "64900"
+          ],
+          [
+            "BlindSpotMon",
+            "Optional"
+          ],
           [
             "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
+            "Coupe"
           ]
         ],
         [
           [
+            "CAN_AACN",
+            "Standard"
+          ],
+          [
+            "CIB",
+            "Standard"
+          ],
+          [
+            "DaytimeRunningLight",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "DisplacementCC",
+            "5000"
+          ],
+          [
             "DisplacementCI",
-            "213.58310433156"
+            "305.1187204736"
           ],
           [
             "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
+            "5"
           ]
         ],
         [
+          [
+            "Doors",
+            "2"
+          ],
+          [
+            "DriveType",
+            "4x2"
+          ],
+          [
+            "DynamicBrakeSupport",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "ESC",
+            "Standard"
+          ],
           [
             "EngineConfiguration",
             "V-Shaped"
           ],
           [
             "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
+            "8"
           ]
         ],
         [
           [
-            "EngineKW",
-            "335.5650"
+            "EngineHP",
+            "472"
           ],
           [
-            "EngineManufacturer",
-            "Ford"
+            "EngineKW",
+            "351.9704"
           ],
           [
             "EngineModel",
-            "3.5L GTDI"
+            "2UR-GSE"
           ]
         ],
         [
@@ -274,8 +321,8 @@
             "0 - VIN decoded clean. Check Digit (9th position) is correct"
           ],
           [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
+            "ForwardCollisionWarning",
+            "Standard"
           ]
         ],
         [
@@ -284,146 +331,284 @@
             "Gasoline"
           ],
           [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
+            "KeylessIgnition",
+            "Standard"
+          ],
+          [
+            "LaneDepartureWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "LaneKeepSystem",
+            "Standard"
           ],
           [
             "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
+            "TOYOTA MOTOR NORTH AMERICA, INC"
+          ],
+          [
+            "ManufacturerId",
+            "962"
           ]
         ],
         [
           [
-            "ManufacturerId",
-            "976"
+            "OtherEngineInfo",
+            "Engine Type : PORT + DIRECT, PORT+DIRECT"
+          ],
+          [
+            "PedestrianAutomaticEmergencyBraking",
+            "Standard"
           ],
           [
             "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
+            "TAHARA"
           ]
         ],
         [
           [
+            "PlantCompanyName",
+            "Tahara Plant, Toyota Motor Corp."
+          ],
+          [
             "PlantCountry",
-            "UNITED STATES (USA)"
+            "JAPAN"
           ],
           [
             "PlantState",
-            "MICHIGAN"
+            "AICHI"
+          ]
+        ],
+        [
+          [
+            "RearVisibilitySystem",
+            "Standard"
           ],
           [
             "SeatBeltsAll",
             "Manual"
+          ],
+          [
+            "SeatRows",
+            "2"
+          ]
+        ],
+        [
+          [
+            "Seats",
+            "4"
+          ],
+          [
+            "SemiautomaticHeadlampBeamSwitching",
+            "Standard"
+          ],
+          [
+            "Series",
+            "USC10L"
+          ]
+        ],
+        [
+          [
+            "Series2",
+            "USC10L-FCZRHA"
+          ],
+          [
+            "SteeringLocation",
+            "Left-Hand Drive (LHD)"
+          ],
+          [
+            "TPMS",
+            "Indirect"
+          ]
+        ],
+        [
+          [
+            "TractionControl",
+            "Standard"
+          ],
+          [
+            "TransmissionSpeeds",
+            "8"
+          ],
+          [
+            "TransmissionStyle",
+            "Automatic"
+          ]
+        ],
+        [
+          [
+            "WheelBaseShort",
+            "107.50"
+          ],
+          [
+            "WheelSizeFront",
+            "19"
+          ],
+          [
+            "WheelSizeRear",
+            "19"
+          ]
+        ],
+        [
+          [
+            "Wheels",
+            "4"
           ]
         ]
       ],
-      "id": 1121,
+      "id": 1126,
       "Photos": [
-        "4718af63-73d1-4ab8-97d7-a82ae7b8aeae.webp"
-      ]
+        "3b3283cc-439f-4a6f-99db-501f00aa1db0.webp"
+      ],
+      "IsActive": 0
     },
     {
-      "Miles": "60k",
-      "Price": "67.5k",
-      "ExteriorColor": "",
+      "Miles": "50k",
+      "Price": "85k",
+      "ExteriorColor": "#413e3e",
       "ExteriorColorSecondary": "",
-      "InteriorColor": "",
+      "InteriorColor": "#c80909",
       "Features": [
         {
-          "id": 16,
-          "feature": "service-desk"
-        },
-        {
-          "id": 4,
-          "feature": "Realigned"
-        },
-        {
-          "id": 1,
-          "feature": "algorithm"
+          "id": 38,
+          "feature": "Optimized"
         }
       ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
+      "MakeID": "515",
+      "Make": "LEXUS",
+      "ModelID": "21951",
+      "Model": "RC-F",
       "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 0,
+      "Trim": "Track",
+      "VIN": "JTHYP5BCXL5007594",
+      "VehicleType": "PASSENGER CAR",
       "additionalData": [
         [
+          [
+            "ABS",
+            "Standard"
+          ],
+          [
+            "AdaptiveCruiseControl",
+            "Standard"
+          ],
+          [
+            "AdaptiveDrivingBeam",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "AirBagLocCurtain",
+            "All Rows"
+          ],
           [
             "AirBagLocFront",
             "1st Row (Driver and Passenger)"
           ],
           [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
+            "AirBagLocKnee",
+            "1st Row (Driver and Passenger)"
           ]
         ],
         [
+          [
+            "AirBagLocSide",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AutoReverseSystem",
+            "Standard"
+          ],
+          [
+            "Axles",
+            "2"
+          ]
+        ],
+        [
+          [
+            "BasePrice",
+            "64900"
+          ],
+          [
+            "BlindSpotMon",
+            "Optional"
+          ],
           [
             "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
+            "Coupe"
           ]
         ],
         [
           [
+            "CAN_AACN",
+            "Standard"
+          ],
+          [
+            "CIB",
+            "Standard"
+          ],
+          [
+            "DaytimeRunningLight",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "DisplacementCC",
+            "5000"
+          ],
+          [
             "DisplacementCI",
-            "213.58310433156"
+            "305.1187204736"
           ],
           [
             "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
+            "5"
           ]
         ],
         [
+          [
+            "Doors",
+            "2"
+          ],
+          [
+            "DriveType",
+            "4x2"
+          ],
+          [
+            "DynamicBrakeSupport",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "ESC",
+            "Standard"
+          ],
           [
             "EngineConfiguration",
             "V-Shaped"
           ],
           [
             "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
+            "8"
           ]
         ],
         [
           [
-            "EngineKW",
-            "335.5650"
+            "EngineHP",
+            "472"
           ],
           [
-            "EngineManufacturer",
-            "Ford"
+            "EngineKW",
+            "351.9704"
           ],
           [
             "EngineModel",
-            "3.5L GTDI"
+            "2UR-GSE"
           ]
         ],
         [
@@ -436,8 +621,8 @@
             "0 - VIN decoded clean. Check Digit (9th position) is correct"
           ],
           [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
+            "ForwardCollisionWarning",
+            "Standard"
           ]
         ],
         [
@@ -446,453 +631,287 @@
             "Gasoline"
           ],
           [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
+            "KeylessIgnition",
+            "Standard"
+          ],
+          [
+            "LaneDepartureWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "LaneKeepSystem",
+            "Standard"
           ],
           [
             "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
+            "TOYOTA MOTOR NORTH AMERICA, INC"
+          ],
+          [
+            "ManufacturerId",
+            "962"
           ]
         ],
         [
           [
-            "ManufacturerId",
-            "976"
+            "OtherEngineInfo",
+            "Engine Type : PORT + DIRECT, PORT+DIRECT"
+          ],
+          [
+            "PedestrianAutomaticEmergencyBraking",
+            "Standard"
           ],
           [
             "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
+            "TAHARA"
           ]
         ],
         [
           [
+            "PlantCompanyName",
+            "Tahara Plant, Toyota Motor Corp."
+          ],
+          [
             "PlantCountry",
-            "UNITED STATES (USA)"
+            "JAPAN"
           ],
           [
             "PlantState",
-            "MICHIGAN"
+            "AICHI"
+          ]
+        ],
+        [
+          [
+            "RearVisibilitySystem",
+            "Standard"
           ],
           [
             "SeatBeltsAll",
             "Manual"
+          ],
+          [
+            "SeatRows",
+            "2"
+          ]
+        ],
+        [
+          [
+            "Seats",
+            "4"
+          ],
+          [
+            "SemiautomaticHeadlampBeamSwitching",
+            "Standard"
+          ],
+          [
+            "Series",
+            "USC10L"
+          ]
+        ],
+        [
+          [
+            "Series2",
+            "USC10L-FCZRHA"
+          ],
+          [
+            "SteeringLocation",
+            "Left-Hand Drive (LHD)"
+          ],
+          [
+            "TPMS",
+            "Indirect"
+          ]
+        ],
+        [
+          [
+            "TractionControl",
+            "Standard"
+          ],
+          [
+            "TransmissionSpeeds",
+            "8"
+          ],
+          [
+            "TransmissionStyle",
+            "Automatic"
+          ]
+        ],
+        [
+          [
+            "WheelBaseShort",
+            "107.50"
+          ],
+          [
+            "WheelSizeFront",
+            "19"
+          ],
+          [
+            "WheelSizeRear",
+            "19"
+          ]
+        ],
+        [
+          [
+            "Wheels",
+            "4"
           ]
         ]
       ],
-      "id": 1121,
+      "id": 1127,
       "Photos": [
-        "4718af63-73d1-4ab8-97d7-a82ae7b8aeae.webp"
+        "4458f6b5-6f5e-4978-826f-2fdb15257186.webp"
       ]
     },
     {
-      "Miles": "12",
-      "Price": "120",
+      "Miles": "24k",
+      "Price": "75k",
       "ExteriorColor": "",
       "ExteriorColorSecondary": "",
       "InteriorColor": "",
       "Features": [
-        {
-          "id": 1,
-          "feature": "algorithm"
-        }
-      ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
-      "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 0,
-      "additionalData": [
-        [
-          [
-            "AirBagLocFront",
-            "1st Row (Driver and Passenger)"
-          ],
-          [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
-          ]
-        ],
-        [
-          [
-            "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
-          ]
-        ],
-        [
-          [
-            "DisplacementCI",
-            "213.58310433156"
-          ],
-          [
-            "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
-          ]
-        ],
-        [
-          [
-            "EngineConfiguration",
-            "V-Shaped"
-          ],
-          [
-            "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
-          ]
-        ],
-        [
-          [
-            "EngineKW",
-            "335.5650"
-          ],
-          [
-            "EngineManufacturer",
-            "Ford"
-          ],
-          [
-            "EngineModel",
-            "3.5L GTDI"
-          ]
-        ],
-        [
-          [
-            "ErrorCode",
-            "0"
-          ],
-          [
-            "ErrorText",
-            "0 - VIN decoded clean. Check Digit (9th position) is correct"
-          ],
-          [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
-          ]
-        ],
-        [
-          [
-            "FuelTypePrimary",
-            "Gasoline"
-          ],
-          [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
-          ],
-          [
-            "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
-          ]
-        ],
-        [
-          [
-            "ManufacturerId",
-            "976"
-          ],
-          [
-            "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
-          ]
-        ],
-        [
-          [
-            "PlantCountry",
-            "UNITED STATES (USA)"
-          ],
-          [
-            "PlantState",
-            "MICHIGAN"
-          ],
-          [
-            "SeatBeltsAll",
-            "Manual"
-          ]
-        ]
-      ],
-      "id": 1122,
-      "Photos": [
-        "b585f033-ce80-45c7-be98-0d4a5490d708.webp",
-        "5a7e68d3-31ee-4462-8283-7ff3f309f03f.webp"
-      ]
-    },
-    {
-      "Miles": "444",
-      "Price": "444",
-      "ExteriorColor": "",
-      "ExteriorColorSecondary": "",
-      "InteriorColor": "",
-      "Features": [
-        {
-          "id": 16,
-          "feature": "service-desk"
-        },
         {
           "id": 10,
           "feature": "Adaptive"
-        }
-      ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
-      "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 1,
-      "additionalData": [
-        [
-          [
-            "AirBagLocFront",
-            "1st Row (Driver and Passenger)"
-          ],
-          [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
-          ]
-        ],
-        [
-          [
-            "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
-          ]
-        ],
-        [
-          [
-            "DisplacementCI",
-            "213.58310433156"
-          ],
-          [
-            "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
-          ]
-        ],
-        [
-          [
-            "EngineConfiguration",
-            "V-Shaped"
-          ],
-          [
-            "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
-          ]
-        ],
-        [
-          [
-            "EngineKW",
-            "335.5650"
-          ],
-          [
-            "EngineManufacturer",
-            "Ford"
-          ],
-          [
-            "EngineModel",
-            "3.5L GTDI"
-          ]
-        ],
-        [
-          [
-            "ErrorCode",
-            "0"
-          ],
-          [
-            "ErrorText",
-            "0 - VIN decoded clean. Check Digit (9th position) is correct"
-          ],
-          [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
-          ]
-        ],
-        [
-          [
-            "FuelTypePrimary",
-            "Gasoline"
-          ],
-          [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
-          ],
-          [
-            "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
-          ]
-        ],
-        [
-          [
-            "ManufacturerId",
-            "976"
-          ],
-          [
-            "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
-          ]
-        ],
-        [
-          [
-            "PlantCountry",
-            "UNITED STATES (USA)"
-          ],
-          [
-            "PlantState",
-            "MICHIGAN"
-          ],
-          [
-            "SeatBeltsAll",
-            "Manual"
-          ]
-        ]
-      ],
-      "id": 1123,
-      "Photos": []
-    },
-    {
-      "Miles": "555",
-      "Price": "555",
-      "ExteriorColor": "",
-      "ExteriorColorSecondary": "",
-      "InteriorColor": "",
-      "Features": [
-        {
-          "id": 11,
-          "feature": "algorithm"
         },
         {
-          "id": 10,
-          "feature": "Adaptive"
+          "id": 7,
+          "feature": "needs-based"
         }
       ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
+      "MakeID": "515",
+      "Make": "LEXUS",
+      "ModelID": "21951",
+      "Model": "RC-F",
       "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 1,
+      "Trim": "Track",
+      "VIN": "JTHYP5BCXL5007594",
+      "VehicleType": "PASSENGER CAR",
       "additionalData": [
         [
+          [
+            "ABS",
+            "Standard"
+          ],
+          [
+            "AdaptiveCruiseControl",
+            "Standard"
+          ],
+          [
+            "AdaptiveDrivingBeam",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "AirBagLocCurtain",
+            "All Rows"
+          ],
           [
             "AirBagLocFront",
             "1st Row (Driver and Passenger)"
           ],
           [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
+            "AirBagLocKnee",
+            "1st Row (Driver and Passenger)"
           ]
         ],
         [
+          [
+            "AirBagLocSide",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AutoReverseSystem",
+            "Standard"
+          ],
+          [
+            "Axles",
+            "2"
+          ]
+        ],
+        [
+          [
+            "BasePrice",
+            "64900"
+          ],
+          [
+            "BlindSpotMon",
+            "Optional"
+          ],
           [
             "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
+            "Coupe"
           ]
         ],
         [
           [
+            "CAN_AACN",
+            "Standard"
+          ],
+          [
+            "CIB",
+            "Standard"
+          ],
+          [
+            "DaytimeRunningLight",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "DisplacementCC",
+            "5000"
+          ],
+          [
             "DisplacementCI",
-            "213.58310433156"
+            "305.1187204736"
           ],
           [
             "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
+            "5"
           ]
         ],
         [
+          [
+            "Doors",
+            "2"
+          ],
+          [
+            "DriveType",
+            "4x2"
+          ],
+          [
+            "DynamicBrakeSupport",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "ESC",
+            "Standard"
+          ],
           [
             "EngineConfiguration",
             "V-Shaped"
           ],
           [
             "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
+            "8"
           ]
         ],
         [
           [
-            "EngineKW",
-            "335.5650"
+            "EngineHP",
+            "472"
           ],
           [
-            "EngineManufacturer",
-            "Ford"
+            "EngineKW",
+            "351.9704"
           ],
           [
             "EngineModel",
-            "3.5L GTDI"
+            "2UR-GSE"
           ]
         ],
         [
@@ -905,8 +924,8 @@
             "0 - VIN decoded clean. Check Digit (9th position) is correct"
           ],
           [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
+            "ForwardCollisionWarning",
+            "Standard"
           ]
         ],
         [
@@ -915,136 +934,291 @@
             "Gasoline"
           ],
           [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
+            "KeylessIgnition",
+            "Standard"
+          ],
+          [
+            "LaneDepartureWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "LaneKeepSystem",
+            "Standard"
           ],
           [
             "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
+            "TOYOTA MOTOR NORTH AMERICA, INC"
+          ],
+          [
+            "ManufacturerId",
+            "962"
           ]
         ],
         [
           [
-            "ManufacturerId",
-            "976"
+            "OtherEngineInfo",
+            "Engine Type : PORT + DIRECT, PORT+DIRECT"
+          ],
+          [
+            "PedestrianAutomaticEmergencyBraking",
+            "Standard"
           ],
           [
             "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
+            "TAHARA"
           ]
         ],
         [
           [
+            "PlantCompanyName",
+            "Tahara Plant, Toyota Motor Corp."
+          ],
+          [
             "PlantCountry",
-            "UNITED STATES (USA)"
+            "JAPAN"
           ],
           [
             "PlantState",
-            "MICHIGAN"
+            "AICHI"
+          ]
+        ],
+        [
+          [
+            "RearVisibilitySystem",
+            "Standard"
           ],
           [
             "SeatBeltsAll",
             "Manual"
+          ],
+          [
+            "SeatRows",
+            "2"
+          ]
+        ],
+        [
+          [
+            "Seats",
+            "4"
+          ],
+          [
+            "SemiautomaticHeadlampBeamSwitching",
+            "Standard"
+          ],
+          [
+            "Series",
+            "USC10L"
+          ]
+        ],
+        [
+          [
+            "Series2",
+            "USC10L-FCZRHA"
+          ],
+          [
+            "SteeringLocation",
+            "Left-Hand Drive (LHD)"
+          ],
+          [
+            "TPMS",
+            "Indirect"
+          ]
+        ],
+        [
+          [
+            "TractionControl",
+            "Standard"
+          ],
+          [
+            "TransmissionSpeeds",
+            "8"
+          ],
+          [
+            "TransmissionStyle",
+            "Automatic"
+          ]
+        ],
+        [
+          [
+            "WheelBaseShort",
+            "107.50"
+          ],
+          [
+            "WheelSizeFront",
+            "19"
+          ],
+          [
+            "WheelSizeRear",
+            "19"
+          ]
+        ],
+        [
+          [
+            "Wheels",
+            "4"
           ]
         ]
       ],
-      "id": 1124,
-      "Photos": []
+      "id": 1128,
+      "Photos": [],
+      "IsActive": 0
     },
     {
-      "Miles": "777",
-      "Price": "777",
+      "id": 1129,
+      "Miles": "12k",
+      "Price": "77.5k",
       "ExteriorColor": "",
       "ExteriorColorSecondary": "",
       "InteriorColor": "",
       "Features": [
         {
-          "id": 19,
-          "feature": "Stand-alone"
+          "id": 22,
+          "feature": "Advanced"
+        },
+        {
+          "id": 21,
+          "feature": "Synergistic"
+        },
+        {
+          "id": 16,
+          "feature": "service-desk"
         }
       ],
-      "MakeID": "460",
-      "Make": "FORD",
-      "ModelID": "1801",
-      "Model": "F-150",
+      "MakeID": "515",
+      "Make": "LEXUS",
+      "ModelID": "21951",
+      "Model": "RC-F",
       "ModelYear": "2020",
-      "Trim": "Super Crew - Raptor",
-      "VIN": "1FTFW1RG2LFB85006",
-      "VehicleType": "TRUCK ",
-      "IsActive": 1,
+      "Trim": "Track",
+      "VIN": "JTHYP5BCXL5007594",
+      "VehicleType": "PASSENGER CAR",
       "additionalData": [
         [
+          [
+            "ABS",
+            "Standard"
+          ],
+          [
+            "AdaptiveCruiseControl",
+            "Standard"
+          ],
+          [
+            "AdaptiveDrivingBeam",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "AirBagLocCurtain",
+            "All Rows"
+          ],
           [
             "AirBagLocFront",
             "1st Row (Driver and Passenger)"
           ],
           [
-            "AirBagLocSide",
-            "1st and 2nd Rows"
-          ],
-          [
-            "BodyCabType",
-            "Crew/ Super Crew/ Crew Max"
+            "AirBagLocKnee",
+            "1st Row (Driver and Passenger)"
           ]
         ],
         [
+          [
+            "AirBagLocSide",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AutoReverseSystem",
+            "Standard"
+          ],
+          [
+            "Axles",
+            "2"
+          ]
+        ],
+        [
+          [
+            "BasePrice",
+            "64900"
+          ],
+          [
+            "BlindSpotMon",
+            "Optional"
+          ],
           [
             "BodyClass",
-            "Pickup"
-          ],
-          [
-            "BrakeSystemType",
-            "Hydraulic"
-          ],
-          [
-            "DisplacementCC",
-            "3500.0"
+            "Coupe"
           ]
         ],
         [
           [
+            "CAN_AACN",
+            "Standard"
+          ],
+          [
+            "CIB",
+            "Standard"
+          ],
+          [
+            "DaytimeRunningLight",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "DisplacementCC",
+            "5000"
+          ],
+          [
             "DisplacementCI",
-            "213.58310433156"
+            "305.1187204736"
           ],
           [
             "DisplacementL",
-            "3.5"
-          ],
-          [
-            "DriveType",
-            "4WD/4-Wheel Drive/4x4"
+            "5"
           ]
         ],
         [
+          [
+            "Doors",
+            "2"
+          ],
+          [
+            "DriveType",
+            "4x2"
+          ],
+          [
+            "DynamicBrakeSupport",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "ESC",
+            "Standard"
+          ],
           [
             "EngineConfiguration",
             "V-Shaped"
           ],
           [
             "EngineCylinders",
-            "6"
-          ],
-          [
-            "EngineHP",
-            "450"
+            "8"
           ]
         ],
         [
           [
-            "EngineKW",
-            "335.5650"
+            "EngineHP",
+            "472"
           ],
           [
-            "EngineManufacturer",
-            "Ford"
+            "EngineKW",
+            "351.9704"
           ],
           [
             "EngineModel",
-            "3.5L GTDI"
+            "2UR-GSE"
           ]
         ],
         [
@@ -1057,8 +1231,8 @@
             "0 - VIN decoded clean. Check Digit (9th position) is correct"
           ],
           [
-            "FuelInjectionType",
-            "Stoichiometric Gasoline Direct Injection (SGDI)"
+            "ForwardCollisionWarning",
+            "Standard"
           ]
         ],
         [
@@ -1067,45 +1241,437 @@
             "Gasoline"
           ],
           [
-            "GVWR",
-            "Class 2F: 7,001 - 8,000 lb (3,175 - 3,629 kg)"
+            "KeylessIgnition",
+            "Standard"
+          ],
+          [
+            "LaneDepartureWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "LaneKeepSystem",
+            "Standard"
           ],
           [
             "Manufacturer",
-            "FORD MOTOR COMPANY, USA"
+            "TOYOTA MOTOR CORPORATION"
+          ],
+          [
+            "ManufacturerId",
+            "1057"
           ]
         ],
         [
           [
-            "ManufacturerId",
-            "976"
+            "OtherEngineInfo",
+            "PORT + DIRECT, PORT+DIRECT"
+          ],
+          [
+            "PedestrianAutomaticEmergencyBraking",
+            "Standard"
           ],
           [
             "PlantCity",
-            "DEARBORN"
-          ],
-          [
-            "PlantCompanyName",
-            "Dearborn"
+            "TAHARA"
           ]
         ],
         [
           [
+            "PlantCompanyName",
+            "Tahara Plant, Toyota Motor Corp."
+          ],
+          [
             "PlantCountry",
-            "UNITED STATES (USA)"
+            "JAPAN"
           ],
           [
             "PlantState",
-            "MICHIGAN"
+            "AICHI"
+          ]
+        ],
+        [
+          [
+            "RearVisibilitySystem",
+            "Standard"
           ],
           [
             "SeatBeltsAll",
             "Manual"
+          ],
+          [
+            "SeatRows",
+            "2"
+          ]
+        ],
+        [
+          [
+            "Seats",
+            "4"
+          ],
+          [
+            "SemiautomaticHeadlampBeamSwitching",
+            "Standard"
+          ],
+          [
+            "Series",
+            "USC10L"
+          ]
+        ],
+        [
+          [
+            "Series2",
+            "USC10L-FCZRHA"
+          ],
+          [
+            "SteeringLocation",
+            "Left-Hand Drive (LHD)"
+          ],
+          [
+            "TPMS",
+            "Indirect"
+          ]
+        ],
+        [
+          [
+            "TractionControl",
+            "Standard"
+          ],
+          [
+            "TransmissionSpeeds",
+            "8"
+          ],
+          [
+            "TransmissionStyle",
+            "Automatic"
+          ]
+        ],
+        [
+          [
+            "WheelBaseShort",
+            "107.50"
+          ],
+          [
+            "WheelSizeFront",
+            "19"
+          ],
+          [
+            "WheelSizeRear",
+            "19"
+          ]
+        ],
+        [
+          [
+            "Wheels",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "Miles": "21",
+      "Price": "56k",
+      "ExteriorColor": "",
+      "ExteriorColorSecondary": "",
+      "InteriorColor": "",
+      "Features": [
+        {
+          "id": 5,
+          "feature": "core"
+        },
+        {
+          "id": 2,
+          "feature": "Seamless"
+        },
+        {
+          "id": 1,
+          "feature": "algorithm"
+        }
+      ],
+      "MakeID": "515",
+      "Make": "LEXUS",
+      "ModelID": "21951",
+      "Model": "RC-F",
+      "ModelYear": "2020",
+      "Trim": "Track",
+      "VIN": "JTHYP5BCXL5007594",
+      "VehicleType": "PASSENGER CAR",
+      "additionalData": [
+        [
+          [
+            "ABS",
+            "Standard"
+          ],
+          [
+            "AdaptiveCruiseControl",
+            "Standard"
+          ],
+          [
+            "AdaptiveDrivingBeam",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "AirBagLocCurtain",
+            "All Rows"
+          ],
+          [
+            "AirBagLocFront",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AirBagLocKnee",
+            "1st Row (Driver and Passenger)"
+          ]
+        ],
+        [
+          [
+            "AirBagLocSide",
+            "1st Row (Driver and Passenger)"
+          ],
+          [
+            "AutoReverseSystem",
+            "Standard"
+          ],
+          [
+            "Axles",
+            "2"
+          ]
+        ],
+        [
+          [
+            "BasePrice",
+            "64900"
+          ],
+          [
+            "BlindSpotMon",
+            "Optional"
+          ],
+          [
+            "BodyClass",
+            "Coupe"
+          ]
+        ],
+        [
+          [
+            "CAN_AACN",
+            "Standard"
+          ],
+          [
+            "CIB",
+            "Standard"
+          ],
+          [
+            "DaytimeRunningLight",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "DisplacementCC",
+            "5000"
+          ],
+          [
+            "DisplacementCI",
+            "305.1187204736"
+          ],
+          [
+            "DisplacementL",
+            "5"
+          ]
+        ],
+        [
+          [
+            "Doors",
+            "2"
+          ],
+          [
+            "DriveType",
+            "4x2"
+          ],
+          [
+            "DynamicBrakeSupport",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "ESC",
+            "Standard"
+          ],
+          [
+            "EngineConfiguration",
+            "V-Shaped"
+          ],
+          [
+            "EngineCylinders",
+            "8"
+          ]
+        ],
+        [
+          [
+            "EngineHP",
+            "472"
+          ],
+          [
+            "EngineKW",
+            "351.9704"
+          ],
+          [
+            "EngineModel",
+            "2UR-GSE"
+          ]
+        ],
+        [
+          [
+            "ErrorCode",
+            "0"
+          ],
+          [
+            "ErrorText",
+            "0 - VIN decoded clean. Check Digit (9th position) is correct"
+          ],
+          [
+            "ForwardCollisionWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "FuelTypePrimary",
+            "Gasoline"
+          ],
+          [
+            "KeylessIgnition",
+            "Standard"
+          ],
+          [
+            "LaneDepartureWarning",
+            "Standard"
+          ]
+        ],
+        [
+          [
+            "LaneKeepSystem",
+            "Standard"
+          ],
+          [
+            "Manufacturer",
+            "TOYOTA MOTOR CORPORATION"
+          ],
+          [
+            "ManufacturerId",
+            "1057"
+          ]
+        ],
+        [
+          [
+            "OtherEngineInfo",
+            "PORT + DIRECT, PORT+DIRECT"
+          ],
+          [
+            "PedestrianAutomaticEmergencyBraking",
+            "Standard"
+          ],
+          [
+            "PlantCity",
+            "TAHARA"
+          ]
+        ],
+        [
+          [
+            "PlantCompanyName",
+            "Tahara Plant, Toyota Motor Corp."
+          ],
+          [
+            "PlantCountry",
+            "JAPAN"
+          ],
+          [
+            "PlantState",
+            "AICHI"
+          ]
+        ],
+        [
+          [
+            "RearVisibilitySystem",
+            "Standard"
+          ],
+          [
+            "SeatBeltsAll",
+            "Manual"
+          ],
+          [
+            "SeatRows",
+            "2"
+          ]
+        ],
+        [
+          [
+            "Seats",
+            "4"
+          ],
+          [
+            "SemiautomaticHeadlampBeamSwitching",
+            "Standard"
+          ],
+          [
+            "Series",
+            "USC10L"
+          ]
+        ],
+        [
+          [
+            "Series2",
+            "USC10L-FCZRHA"
+          ],
+          [
+            "SteeringLocation",
+            "Left-Hand Drive (LHD)"
+          ],
+          [
+            "TPMS",
+            "Indirect"
+          ]
+        ],
+        [
+          [
+            "TractionControl",
+            "Standard"
+          ],
+          [
+            "TransmissionSpeeds",
+            "8"
+          ],
+          [
+            "TransmissionStyle",
+            "Automatic"
+          ]
+        ],
+        [
+          [
+            "WheelBaseShort",
+            "107.50"
+          ],
+          [
+            "WheelSizeFront",
+            "19"
+          ],
+          [
+            "WheelSizeRear",
+            "19"
+          ]
+        ],
+        [
+          [
+            "Wheels",
+            "4"
           ]
         ]
       ],
-      "id": 1125,
-      "Photos": []
+      "id": 3000
     }
   ],
   "features": [
@@ -1579,7 +2145,7 @@
       "id": 11,
       "name": "Shandeigh Armes",
       "testimonial": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-      "status": 0
+      "status": 1
     },
     {
       "id": 12,
@@ -1603,7 +2169,7 @@
       "id": 15,
       "name": "Elka De Roos",
       "testimonial": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-      "status": 0
+      "status": 2
     },
     {
       "id": 16,
@@ -1788,12 +2354,13 @@
     {
       "id": 1,
       "companyName": "Thoughtstorm",
+      "companyNumber": "813-614-3752",
+      "companyAddress": "4 Elka Avenue",
+      "companyEmail": "Thoughtstorm0@gmail.com",
       "dealerFirstName": "Mars",
       "dealerLastName": "Scammer",
       "dealerNumber": "511-549-9574",
-      "companyNumber": "813-614-3752",
-      "dealerEmail": "hmcquillin0@instagram.com",
-      "dealerAddress": "4 Elka Avenue"
+      "dealerEmail": "hmcquillin0@instagram.com"
     }
   ],
   "contacts": [

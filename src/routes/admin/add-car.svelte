@@ -43,13 +43,6 @@
         Photos: [],
     };
 
-    // const features = [
-    //     "Heated Seats",
-    //     "A/C seats",
-    //     "rear window defroster",
-    //     "heated steering wheel",
-    //     "panaramic roof",
-    // ];
     let features = [];
 
     const getFeatures = async () => {
